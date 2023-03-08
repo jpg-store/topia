@@ -726,8 +726,8 @@ input::placeholder {
       width: 80%;
     }
     100% {
-      top: 12%;
-      width: 80%;
+      top: 10%;
+      width: 90%;
     }
   }
 }
