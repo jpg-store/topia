@@ -211,6 +211,10 @@ video {
   height: 5%;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .end {
   font-size: 6rem;
   color: #74e29b;
@@ -266,6 +270,10 @@ video {
   position: relative;
   width: fit-content;
   z-index: 5;
+}
+
+.but:hover {
+  cursor: pointer;
 }
 
 
