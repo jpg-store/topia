@@ -356,6 +356,10 @@ video {
   bottom: 50px;
 }
 
+.collections {
+  margin-top: 20px;
+}
+
 .hosted {
   visibility: hidden;
   color: #FFFFFF;
