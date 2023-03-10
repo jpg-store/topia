@@ -83,6 +83,11 @@ function animate() {
     } else {
       console.log("done");
       document.getElementById("but").style.visibility = "visible";
+      setTimeout(() => {
+        document.getElementById(
+          "description-black-background-wrapper"
+        ).style.visibility = "visible";
+      }, 9000);
       document.getElementById("but").addEventListener("click", animateTopia);
     }
   }

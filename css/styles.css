@@ -923,6 +923,7 @@ input::placeholder {
 
 #description-black-background-wrapper {
   position:relative;
+  visibility: hidden;
 }
 
 #description-black-background {
