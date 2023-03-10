@@ -942,16 +942,16 @@ input::placeholder {
   top: 50%;
   z-index:999;
   transform: translateX(-50%) translateY(-50%);
-  width: 10px;
-  height: 10px;
+  width: 8vw;
+  height: 8vw;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #play {
-    width: 15vw;
-  height: 15vw;
+    width: 15px;
+    height: 15px;
   }
-} */
+}
 
 video::-webkit-media-controls {
   display: none;

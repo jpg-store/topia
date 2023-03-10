@@ -16,15 +16,15 @@
 <body id="wrapper">
 
     <div class="videoContainer">
-      <video autoplay loop muted controls="false">
+      <video autoplay loop muted controls="false" playsinline>
         <source src="videos/topia1.mp4" type="video/mp4"> 
         <!-- <source src="videos/jungle.webm" type="video/webm"> -->
       </video>
   </div>  
   <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
-    <audio id="ID" loop>
-    <source src="videos/edm-jungle.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    <audio id="ID" loop controls="off">
+      <source src="videos/edm-jungle.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
     <!-- <img id="volume" src="images/volume-off.svg" class="play off"></img> -->
     <img id="skip" src="images/skip.png" class="skip"></img>
