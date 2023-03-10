@@ -26,7 +26,7 @@
     <source src="videos/edm-jungle.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
-    <img id="volume" src="images/volume-off.svg" class="play off"></img>
+    <!-- <img id="volume" src="images/volume-off.svg" class="play off"></img> -->
     <img id="skip" src="images/skip.png" class="skip"></img>
     <script>
 
@@ -37,7 +37,7 @@ var volume = document.getElementById('volume');
 var but = document.getElementById("but");
 var sound = "off";
 var abort = false;
-
+var playing = false;
 
 if(body.addEventListener)
   body.addEventListener("click", bodyClick, false);
@@ -45,6 +45,15 @@ else
   body.attachEvent("onclick", bodyClick);
 
 function bodyClick(event){
+  console.log("body");
+  if(!playing) {
+    document.getElementById("skip").style.visibility = "visible";
+    document.getElementById("play").style.visibility = "hidden";
+    playing = true;
+    musicPlay();
+    animate();
+  }
+
   if(event.target == skip) {
     skip.style.none = "none";
     console.log('skipped');
@@ -77,10 +86,6 @@ function bodyClick(event){
   document.getElementById("host").classList.add("skip-collections");
   document.getElementById("host").style.display = "block";
   }
-  if(event.target == body || event.target == volume){
-    console.log("body");
-    musicPlay();
-  }
 }
 
 
@@ -88,14 +93,14 @@ function musicPlay() {
   if(sound=="off"){
     console.log("off");
     sound="on";
-    volume.src = "images/volume-now.svg";
-  volume.style.height = '6.2%';
+  //   volume.src = "images/volume-now.svg";
+  // volume.style.height = '6.2%';
   document.getElementById('ID').play();
   document.getElementById('ID').muted = false;
   } else {
     console.log("on");
     sound="off";
-    volume.src = "images/volume-off.svg";
+    // volume.src = "images/volume-off.svg";
     document.getElementById('ID').muted = true;
   }
 }
@@ -110,6 +115,7 @@ function musicPlay() {
 
 
   <div id="overlay"></div>
+  <img id="play" src="images/play.png" width="100" height="100"/>
 
   <img id="leaf-top" class="leaf-top" src="images/leaf-top.png"></img> 
   <img id="leaf-bottom" class="leaf-bottom" src="images/leaf-bottom.png"></img> 
@@ -143,11 +149,11 @@ function musicPlay() {
               <img id="alley" class="alley alleykatz" src="images/alleykatz.jpg"></img>
             </a>
           </a>
-          <a href="https://www.jpg.store/collection/oremob" target="_blank">
-            <img id="alley" class="alley" src="images/oremob.jpg"></img>
-          </a>
           <a href="https://www.jpg.store/collection/claynation" target="_blank">
             <img id="alley" class="alley" src="images/claynation.JPG"></img>
+          </a>
+          <a href="https://www.jpg.store/collection/chilledkongs" target="_blank">
+            <img id="alley" class="alley" src="images/chilledkong.png"></img>
           </a>
           </div>
         </div>

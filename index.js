@@ -4,6 +4,7 @@ const elts = {
 };
 
 const texts = [
+  "",
   "Deep in the jungle",
   "where the creatures play",
   "You are invited",
@@ -60,14 +61,13 @@ function doCooldown() {
 function animate() {
   if (textIndex < texts.length - 1) {
     requestAnimationFrame(animate);
-
+    console.log(cooldown);
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
     let dt = (newTime - time) / 1000;
     time = newTime;
 
     cooldown -= dt;
-
     if (cooldown <= 0) {
       if (shouldIncrementIndex) {
         textIndex++;
@@ -127,4 +127,4 @@ function animateTopia() {
   document.getElementById("input").style.opacity = "0";
 }
 
-animate();
+// animate();
