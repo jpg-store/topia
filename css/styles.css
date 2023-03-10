@@ -387,13 +387,19 @@ video {
 
 #copy {
   position: absolute;
-  top:0%;
+  top: 0%;
   bottom: 0;
   left: 0;
   right: 0;
   
   margin: 360px auto;
   z-index: 3;
+}
+
+@media screen and (min-width: 1500px) {
+  #copy {
+    top: 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -919,6 +925,10 @@ input::placeholder {
 
 #ready:hover {
   cursor: pointer;
+}
+
+#description {
+  letter-spacing: 0.01em;
 }
 
 #description-black-background-wrapper {
