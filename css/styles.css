@@ -942,8 +942,15 @@ input::placeholder {
   top: 50%;
   z-index:999;
   transform: translateX(-50%) translateY(-50%);
-  width: 100px;
-  height: 100px;
+  width: 8vw;
+  height: 8vw;
+}
+
+@media screen and (max-width: 600px) {
+  #play {
+    width: 15vw;
+  height: 15vw;
+  }
 }
 
 video::-webkit-media-controls {
