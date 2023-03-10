@@ -956,3 +956,5 @@ input::placeholder {
 video::-webkit-media-controls {
   display: none;
 }
+
+audio { display:none;}
