@@ -356,8 +356,10 @@ video {
   bottom: 50px;
 }
 
-.collections {
-  margin-top: 20px;
+@media screen and (max-width: 600px) {
+  .collections {
+    margin-top: 20px;
+  }
 }
 
 .hosted {
