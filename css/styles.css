@@ -945,3 +945,7 @@ input::placeholder {
   width: 100px;
   height: 100px;
 }
+
+video::-webkit-media-controls {
+  display: none;
+}
