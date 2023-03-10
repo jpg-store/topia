@@ -82,11 +82,6 @@ function animate() {
     } else {
       console.log("done");
       document.getElementById("but").style.visibility = "visible";
-      setTimeout(() => {
-        document.getElementById(
-          "description-black-background-wrapper"
-        ).style.visibility = "visible";
-      }, 9000);
       document.getElementById("but").addEventListener("click", animateTopia);
     }
   }
@@ -94,6 +89,13 @@ function animate() {
 
 function animateTopia() {
   console.log("Ready");
+
+  setTimeout(() => {
+    document.getElementById(
+      "description-black-background-wrapper"
+    ).style.visibility = "visible";
+    document.getElementById("leaf-bottom").style.display = "none";
+  }, 9000);
 
   document.getElementById("but").style.visibility = "hidden";
   document.getElementById("text1").style.visibility = "hidden";
