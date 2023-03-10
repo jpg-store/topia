@@ -946,12 +946,12 @@ input::placeholder {
   height: 10px;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   #play {
     width: 15vw;
   height: 15vw;
   }
-}
+} */
 
 video::-webkit-media-controls {
   display: none;
