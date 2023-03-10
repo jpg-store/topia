@@ -396,7 +396,19 @@ video {
   z-index: 3;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
+  #copy {
+    top: 2%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #copy {
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
   #copy {
     top: 10%;
   }
