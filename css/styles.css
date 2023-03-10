@@ -959,3 +959,13 @@ video::-webkit-media-controls {
 }
 
 audio { display:none;}
+
+#sound-on {
+  position: fixed;
+  left:50%;
+  transform: translateX(-50%);
+  top: 57%;
+  font-family: 'Lexend';
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}

@@ -49,6 +49,7 @@ function bodyClick(event){
   if(!playing) {
     document.getElementById("skip").style.visibility = "visible";
     document.getElementById("play").style.visibility = "hidden";
+    document.getElementById("sound-on").style.visibility = "hidden";
     playing = true;
     musicPlay();
     animate();
@@ -118,7 +119,7 @@ function musicPlay() {
 
   <div id="overlay"></div>
   <img id="play" src="images/play.png"/>
-
+  <h2 id="sound-on">Turn your sound on</h3>
   <img id="leaf-top" class="leaf-top" src="images/leaf-top.png"></img> 
   <img id="leaf-bottom" class="leaf-bottom" src="images/leaf-bottom.png"></img> 
 
