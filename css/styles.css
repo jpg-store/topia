@@ -948,8 +948,8 @@ input::placeholder {
 
 @media screen and (max-width: 600px) {
   #play {
-    width: 15px;
-    height: 15px;
+    width: 15vw;
+    height: 15vw;
   }
 }
 
