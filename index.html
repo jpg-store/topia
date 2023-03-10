@@ -26,7 +26,7 @@
       <source src="videos/edm-jungle.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    <!-- <img id="volume" src="images/volume-off.svg" class="play off"></img> -->
+    <img id="volume" src="images/volume-off.svg" class="play off"></img>
     <img id="skip" src="images/skip.png" class="skip"></img>
     <script>
 
@@ -45,7 +45,6 @@ else
   body.attachEvent("onclick", bodyClick);
 
 function bodyClick(event){
-  console.log("body");
   if(!playing) {
     document.getElementById("skip").style.visibility = "visible";
     document.getElementById("play").style.visibility = "hidden";
@@ -55,12 +54,14 @@ function bodyClick(event){
     animate();
   }
 
+  console.log(event.target)
+  if(event.target == volume) { 
+    musicPlay();
+  }
+
   if(event.target == skip) {
     skip.style.none = "none";
-    console.log('skipped');
-    console.log(event.target);
     abort=true;
-    console.log(abort);
   
   document.getElementById("description-black-background-wrapper").style.visibility = "visible";
     
@@ -96,14 +97,14 @@ function musicPlay() {
   if(sound=="off"){
     console.log("off");
     sound="on";
-  //   volume.src = "images/volume-now.svg";
+      volume.src = "images/volume-now.svg";
   // volume.style.height = '6.2%';
   document.getElementById('ID').play();
   document.getElementById('ID').muted = false;
   } else {
     console.log("on");
     sound="off";
-    // volume.src = "images/volume-off.svg";
+    volume.src = "images/volume-off.svg";
     document.getElementById('ID').muted = true;
   }
 }

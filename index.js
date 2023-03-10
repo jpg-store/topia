@@ -61,7 +61,6 @@ function doCooldown() {
 function animate() {
   if (textIndex < texts.length - 1) {
     requestAnimationFrame(animate);
-    console.log(cooldown);
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
     let dt = (newTime - time) / 1000;
