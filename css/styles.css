@@ -436,7 +436,7 @@ video {
 
 .contents{
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 0;
     right: 0;
     
@@ -539,6 +539,35 @@ video {
   }
 }
 
+#hosted-by {
+  margin-bottom: 0;
+}
+
+#need-a-code {
+  opacity: 0;
+  margin-top: 0;
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.form-enter-code {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .form-enter-code {
+    height: 60px;
+  }
+  #need-a-code {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 .input {
   visibility: hidden;

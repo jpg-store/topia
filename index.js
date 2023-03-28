@@ -122,6 +122,8 @@ function animateTopia() {
   document.getElementById("host").style.display = "block";
   document.getElementById("host").classList.add("fade-collections");
 
+  document.getElementById("need-a-code").classList.add("fade-collections");
+  // document.getElementById("need-a-code").style.visibility = "visible";
   document.getElementById("description").classList.add("fade-description");
   document.getElementById("description").style.visibility = "visible";
   document.getElementById("description").style.opacity = "0";
